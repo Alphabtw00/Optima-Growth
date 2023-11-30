@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--formatting the logs which we send to console-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+    <!--formatting the logs we send to logstash-->
+    <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <!--destination where logstash is connected-->
+        <destination>logstash:5000</destination>
+        <!--formats the logs in the way logstash wants(json)-->
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+    </appender>
+
+    <!-- root logger for all logs(objects) which doesnt have specific logger-->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="logstash"/>
+    </root>
+
+    <!-- info logger for all spring logs-->
+    <logger name="org.springframework" level="INFO"/>
+
+    <!-- debug logger for our services-->
+    <logger name="com.optimagrowth" level="DEBUG"/>
+
+    <!-- debug logger for spring security -->
+    <logger name="org.springframework.security" level="DEBUG"/>
+</configuration>
