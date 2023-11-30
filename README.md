@@ -2,7 +2,7 @@
 Optima Growth is a software development company whose core product  O-stock, provides an enterprise-grade asset management application. It furnishes coverage for all the critical elements: inventory, software delivery, license management, compliance, cost, and resource management. Its primary goal is to enable organizations to gain an accurate point-in-time picture of their software assets.
  
 This cutting-edge project was meticulously crafted using an extensive tech stack, including:
-Spring Boot 3.0, Spring Security 6, Spring Cloud Project, Spring JPA and Spring Micrometer, OpenFeign.
+Spring Boot 3.0, Spring Security 6, Spring Cloud Project, Spring JPA Spring Micrometer and OpenFeign.
 
 # ARCHITECTURE:-
 ![image](https://github.com/Alphabtw00/Optima-Growth/assets/124119017/0b774d6c-1576-4491-b3ae-688a6929ddb1)
