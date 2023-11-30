@@ -25,15 +25,16 @@ docker compose down
 ## Includes tools like: 
 **Config Server**: server used to store configuration of all services used in this project.  
 **Admin Server**: provides ui to monitor and manage our application and services.  
+**Micrometer**: used Spring Micrometer which is a distributed tracing and observation tool.
 **KeyCloak**: security is handled using oauth2 protocol. it uses keycloack to generate authentication bearer token to get access to the services, which is passed to all downstream services automatically.  
 **Api Gateway**: Requests are channeled and fitlered through spring cloud api gateway which passes the requests forward to  downstream services.  
 **Netflix Eureka**: enables services to locate and communicate with each other without hard-coded, static configurations.  
 **Kafka**: Messaging is handled via Spring annotation integration of Kafka using Spring Cloud Stream Kafka.  
 **Redis**: my choice of in-memory data structure store used to cache the database entities to improve call times, induce high performance, low latency and quicker retrieval of data.  
 **ELK(elasticsearch, logstash, kibana)**: used for centralized logging and logs management.  
-    -*Elasticsearch* stores and indexes logs.  
-    -*Logstash* ingests and transforms our logs and sends them to elasticsearch.  
-    -*Kibana* provides an UI to manage and query log data from elasticsearch.  
+      -*Elasticsearch* stores and indexes logs.  
+      -*Logstash* ingests and transforms our logs and sends them to elasticsearch.  
+      -*Kibana* provides an UI to manage and query log data from elasticsearch.  
 **Zipkin**: tracing system to monitor all calls and traces, also provides an UI to do so.  
 **PostgreSQL**: Chosen as the relational database management system.  
 **Resilience4j**: Implementing resilience patterns like circuit breaker, bulkhead and retry to fortify the system against failures and unexpected conditions.  
