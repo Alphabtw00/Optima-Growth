@@ -13,11 +13,14 @@ Spring Boot 3.0, Spring Security 6, Spring Cloud Project, Spring JPA Spring Micr
 Follow these steps to get your development environment set up: (Before Run Start the Docker Desktop)
 1. Clone the repository
 2. Install Docker Dekstop and start it.
-3. At the root directory of the parent project which is OPTIMA GROWTH, it includes docker-compose.yml file, run it via below command:
+3. At the root directory of the parent project which is OPTIMA GROWTH, it includes docker-compose.yml file, run it in the root directory iteself via below command:
 ```
-docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+docker compose up
 ```
-
+4. To stop the file use:
+```
+docker compose down
+```
 
 ## Includes tools like: 
 **Config Server**: server used to store configuration of all services used in this project.  
