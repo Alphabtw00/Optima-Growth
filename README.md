@@ -1,7 +1,9 @@
 # Optima-Growth:-
 Optima Growth is a software development company whose core product  O-stock, provides an enterprise-grade asset management application. It furnishes coverage for all the critical elements: inventory, software delivery, license management, compliance, cost, and resource management. Its primary goal is to enable organizations to gain an accurate point-in-time picture of their software assets.
+
+This uses Heroku’s best practice guide- : called the twelve-factor app (https://12factor.net/). It includes the 12 best practices to build a microservice architecture cloud application. 
  
-This cutting-edge project was meticulously crafted using an extensive tech stack, including:
+This cutting-edge project was meticulously crafted using an extensive tech stack, including: 
 Spring Boot 3.0, Spring Security 6, Spring Cloud Project, Spring JPA Spring Micrometer and OpenFeign.
 
 # ARCHITECTURE:-
